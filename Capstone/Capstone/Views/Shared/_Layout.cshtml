@@ -1,0 +1,91 @@
+﻿@{
+    int userRole = 0;
+    int userId = 0;
+    if (Session["Username"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+        int.TryParse(Session["UserID"].ToString(), out userId);
+    }
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Gamers Paradise</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Game Parade", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li class="navbar-btn">
+                    <div id="DropdownNav" class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            @if (userRole != 0)
+            {
+                <ul class="nav navbar-nav">
+                    <li class="navbar-btn">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                User Options <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("User List", "Index", "User")</li>
+                                <li>@Html.ActionLink("My Posts", "ViewPostsByUserId", "Post", new { UserId = userId }, null)</li>
+                                <li>@Html.ActionLink("Thread List", "Index", "Thread")</li>
+                                @if (userRole == 1)
+                                {
+                                    <li>@Html.ActionLink("Role List", "Index", "Role")</li>
+                                }
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            }
+            <ul class="nav navbar-nav navbar-right">
+                @if (Session["Username"] == null)
+                {
+                    <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                    <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                }
+                else
+                {
+                    <li id="UsernameDisplay">@Html.Label(Session["Username"].ToString())</li>
+                    <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+                }
+
+            </ul>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

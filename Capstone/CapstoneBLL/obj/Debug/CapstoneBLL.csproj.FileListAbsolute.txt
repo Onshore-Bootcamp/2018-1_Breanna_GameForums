@@ -1,0 +1,6 @@
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\bin\Debug\CapstoneBLL.dll
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\bin\Debug\CapstoneBLL.pdb
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\obj\Debug\CapstoneBLL.csproj.CoreCompileInputs.cache
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\obj\Debug\CapstoneBLL.dll
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\obj\Debug\CapstoneBLL.pdb
+C:\Users\Breanna\source\repos\Capstone\CapstoneBLL\obj\Debug\CapstoneBLL.csprojResolveAssemblyReference.cache

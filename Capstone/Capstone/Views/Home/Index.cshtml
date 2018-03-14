@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<body>
+    <div class="Home">
+        @if (Session["Username"] != null)
+        {
+                <p>
+                    Welcome to the site!<br />
+                    Please check out our rules, located to the right >>> <br />
+                    Don't forget to check out all our awesome threads and posts!
+                </p>
+        }
+        else
+        {
+            <p>
+                Hey, you're not logged in! Go ahead and log in now to view more stuff! <br />
+                Don't have an account? Well go right on ahead and register via the link at the top right! <br />
+                Our registered users can do much more than view this boring old home page!<br />
+                Trouble registering? Head on over to the contact page to email our admin.
+            </p>
+        }
+    </div>
+    <div class="RulesContainer container">
+        <div>
+            <h3>Site Rules</h3>
+        </div>
+        <ul>
+            <li>Keep it clean, no cursing allowed</li>
+            <li>No NSFW posts</li>
+            <li>Try not to duplicate posts, answers you seek may be in another post</li>
+            <li>Be kind, have fun, game on</li>
+        </ul>
+    </div>
+
+</body>

@@ -1,0 +1,65 @@
+﻿@using Capstone.Models
+@model List<UserPO>
+@{
+    ViewBag.Title = "Users";
+
+
+}
+
+@if (Session["Username"] != null)
+{
+    int userId = 0;
+    int userRole = 0;
+    if (Session["RoleID"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+        int.TryParse(Session["UserID"].ToString(), out userId);
+    }
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="List container">
+            <h1>Users</h1>
+            @if (userRole == 1)
+            {
+                @Html.ActionLink("Add New User", "AddUser", "User", new { @style = "text-transform:capitalize" }, new { @style = "font-weight:bold" })
+                <br />
+            }
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                @foreach (UserPO user in Model)
+                {
+                    <tbody>
+                        <tr>
+                            <td>@Html.DisplayFor(model => user.Username)</td>
+                            <td>@Html.DisplayFor(model => user.Name)</td>
+                            @if (userId != user.UserId && user.RoleId != 1 && (userRole == 1 || userRole == 2))
+                            {
+                               <td>@Html.ActionLink("Edit", "UpdateUser", "User", new { userId = user.UserId, roleId = user.RoleId }, null)</td>
+                               <td>@Html.ActionLink("Delete", "DeleteUser", "User", new { userId = user.UserId }, new { @onclick = "return Confirmation('Are you sure you want to delete this user?')" })</td>
+                            }
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        </div>
+    </body>
+}
+else
+{
+    if (TempData != null)
+    {
+        <p class="TempData">
+            @TempData["message"]
+        </p>
+    }
+    @Html.Action("Login", "Account")
+}
+
+<script src="~/Scripts/site.js"></script>

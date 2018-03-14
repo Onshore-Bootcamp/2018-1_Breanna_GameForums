@@ -1,0 +1,40 @@
+﻿@using Capstone.Models
+@model ThreadPO
+@{
+    ViewBag.Title = "AddThread";
+
+    int userRole = 0;
+    if (Session["RoleID"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+@if (Session["Username"] != null && (userRole == 1 || userRole == 2))
+{
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="Forms container">
+            <h2>Add Thread</h2>
+            @using (Html.BeginForm("AddThread", "Thread", FormMethod.Post))
+            {
+                <div class="form-horizontal FormContent">
+                    @Html.Label("Title")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Title)
+                    </div>
+                    @Html.Label("Information")
+                    <div class="form-group">
+                        @Html.TextAreaFor(model => Model.Information, new { rows = "10", cols = "75" })
+                    </div>
+                    <input type="submit" value="Submit" />
+                </div>
+            }
+        </div>
+    </body>
+}
+else
+{
+    @Html.Action("Index", "User", null)
+}

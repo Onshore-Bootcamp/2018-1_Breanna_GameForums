@@ -1,0 +1,39 @@
+﻿@using Capstone.Models
+@model RegisterPO
+@{
+    ViewBag.Title = "Register";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<body>
+    <div class="Forms">
+        <h2>Register</h2>
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            <div class="form-horizontal FormContent">
+                @Html.Label("Username")
+                <div class="form-group">
+                    @Html.TextBoxFor(model => Model.Username)
+                    @Html.ValidationMessageFor(model => Model.Username)
+                </div>
+                @Html.Label("Password")
+                <div class="form-group">
+                    @Html.PasswordFor(model => Model.Password)
+                    @Html.ValidationMessageFor(model => Model.Password)
+                </div>
+                @Html.Label("Email Address")
+                <div class="form-group">
+                    @Html.TextBoxFor(model => Model.Email)
+                    @Html.ValidationMessageFor(model => Model.Email)
+                </div>
+                @Html.Label("First Name")
+                <div class="form-group">
+                    @Html.TextBoxFor(model => Model.Name)
+                    @Html.ValidationMessageFor(model => Model.Name)
+                </div>
+                <input type="submit" value="Submit" />
+            </div>
+        }
+    </div>
+</body>

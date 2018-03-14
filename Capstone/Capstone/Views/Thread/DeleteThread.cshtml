@@ -1,0 +1,31 @@
+﻿@using Capstone.Models
+@model ThreadPO
+@{
+    ViewBag.Title = "DeleteThread";
+
+    int userRole = 0;
+    if (Session["RoleID"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+
+@if (Session["Username"] != null && (userRole == 1 || userRole == 2))
+{
+    <div>
+        <h2>Delete Thread</h2>
+        @using (Html.BeginForm("DeleteThread", "Thread", FormMethod.Post))
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.HiddenFor(model => Model.ThreadId)
+                </div>
+                <input type="submit" value="Submit" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    @Html.Action("Index", "User", null)
+}

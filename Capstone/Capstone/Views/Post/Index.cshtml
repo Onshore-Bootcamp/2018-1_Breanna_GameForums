@@ -1,0 +1,53 @@
+﻿@using Capstone.Models
+@model PostViewModel
+@{
+    ViewBag.Title = "Posts";
+
+}
+@if (Session["Username"] != null)
+{
+    int userId = 0;
+    int userRole = 0;
+    if (userRole == 0)
+    {
+        int.TryParse(Session["UserID"].ToString(), out userId);
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+
+
+        <div class="List container">
+            <h1>Posts</h1>
+            <div>
+                @foreach (PostPO post in Model.Posts)
+                {
+                    <div class="ListItems">
+                        <span>@Html.DisplayFor(model => post.UserId)</span>
+                        <span>@Html.DisplayFor(model => post.Title)</span>
+                        <span>@Html.DisplayFor(model => post.CreationDate)</span>
+                        <span>@Html.DisplayFor(model => post.EditDate)</span>
+                        <span>@Html.DisplayFor(model => post.Content)</span>
+                    </div>
+                    <div class="AdminListItemOptions">
+                        @if (userId == post.UserId || userRole == 1 || userRole == 2)
+                        {
+                            @Html.ActionLink("Edit", "UpdatePost", "Post", new { postId = post.PostId }, null)
+                            @Html.ActionLink("Delete", "DeletePost", "Post", new { postId = post.PostId, threadId = post.ThreadId }, new { @onclick = "return Confirmation('Are you sure you want to delete?')" })
+                        }
+                    </div>
+                }
+                @Html.ActionLink("Add New Post", "AddPost", "Post", new { userId = userId, threadId = Model.ThreadId }, null)
+                @Html.ActionLink("My Posts", "ViewPostsByUserId", "Post", new { userId = userId }, null)
+            </div>
+        </div>
+
+        <script src="~/Scripts/site.js"></script>
+    </body>
+}   
+else
+{
+    @Html.Action("Login", "Account", null)
+}

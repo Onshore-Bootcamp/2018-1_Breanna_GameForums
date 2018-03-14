@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone", "Capstone\Capstone.csproj", "{D14D7492-79B4-4B2F-A90B-41EC3E8E7713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneBLL", "CapstoneBLL\CapstoneBLL.csproj", "{2928AC5D-811B-47E5-994C-147738C7F796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneDAL", "CapstoneDAL1\CapstoneDAL.csproj", "{E3429815-EFF6-4231-8FAD-9D03846F6F61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D14D7492-79B4-4B2F-A90B-41EC3E8E7713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14D7492-79B4-4B2F-A90B-41EC3E8E7713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14D7492-79B4-4B2F-A90B-41EC3E8E7713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14D7492-79B4-4B2F-A90B-41EC3E8E7713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2928AC5D-811B-47E5-994C-147738C7F796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2928AC5D-811B-47E5-994C-147738C7F796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2928AC5D-811B-47E5-994C-147738C7F796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2928AC5D-811B-47E5-994C-147738C7F796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3429815-EFF6-4231-8FAD-9D03846F6F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3429815-EFF6-4231-8FAD-9D03846F6F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3429815-EFF6-4231-8FAD-9D03846F6F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3429815-EFF6-4231-8FAD-9D03846F6F61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC2A06AC-0A28-48EC-A1F0-B55FD466CD16}
+	EndGlobalSection
+EndGlobal

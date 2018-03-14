@@ -1,0 +1,59 @@
+﻿@using Capstone.Models
+@model ThreadViewModel
+@{
+    ViewBag.Title = "Threads";
+
+}
+@if (Session["Username"] != null)
+{
+    int userRole = 0;
+    if (userRole == 0)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="List container">
+            <h1>Threads</h1>
+            @if (userRole == 1 || userRole == 2)
+            {
+                @Html.ActionLink("Add New Thread", "AddThread", "Thread", new { @style = "text-transform:capitalize, font-weight:bold" })
+            }
+            @Html.Label("Average words per post")
+            @Html.DisplayFor(model => Model.AverageWords)<br />
+            <div>
+                @foreach (ThreadPO thread in Model.Threads)
+                {
+                    <div>
+                        <a href="@Url.Action("ViewPostsByThreadId", "Post", new { threadId = thread.ThreadId })">
+                            <div class="ThreadListItems">
+                                <div id="ThreadName">@Html.DisplayFor(model => thread.Title, new { @style = "border-style: solid, border-color:blue" })</div>
+                                <div>@Html.DisplayFor(model => thread.Information, new { @style = "border-style: solid" })</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="AdminListItemOptions">
+                        @if (userRole == 1)
+                        {
+                            @Html.ActionLink("Edit", "UpdateThread", "Thread", new { threadId = thread.ThreadId }, null)<br />
+                            @Html.ActionLink("Delete", "DeleteThread", "Thread", new { threadId = thread.ThreadId }, new { @onclick = "return Confirmation('Are you sure you want to delete this Thread?')" })
+                        }
+                    </div><br />
+                }
+            </div>
+        </div>
+    </body>
+}
+else
+{
+    if (TempData != null)
+    {
+        <p class="TempData">
+            @TempData["message"]
+        </p>
+    }
+    @Html.Action("Login", "Account", null)
+}
+<script src="~/Scripts/site.js"></script>

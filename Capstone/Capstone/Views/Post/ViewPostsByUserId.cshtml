@@ -1,0 +1,83 @@
+﻿@using Capstone.Models
+@model PostViewModel
+@{
+    ViewBag.Title = "Posts";
+
+    int userId = 0;
+    int userRole = 0;
+    if (Session["Username"] != null)
+    {
+        int.TryParse(Session["UserID"].ToString(), out userId);
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+
+@if (Session["Username"] != null)
+{
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="PostList container">
+            <h1>My Posts</h1>
+            <table class="table">
+                <thead class="TableHead">
+                    <tr>
+                        <th>
+                            Creator
+                        </th>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Creation Date
+                        </th>
+                        <th>
+                            Edit Date
+                        </th>
+                        <th>
+                            Content
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (PostPO post in Model.Posts)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(model => post.Username)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => post.Title)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => post.CreationDate)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => post.EditDate)
+                            </td>
+                            <td>
+                                <div class="content">@Html.DisplayFor(model => post.Content)</div>
+                            </td>
+                            <td>
+                                @if (userId == post.UserId)
+                                {
+                                    @Html.ActionLink("Delete", "DeletePost", "Post", new { postId = post.PostId, threadId = post.ThreadId }, new { @onclick = "return Confirmation('Are you sure you want to delete?')" })
+                                }
+                                @if (userId == post.UserId)
+                                {
+                                    @Html.ActionLink("Edit", "UpdatePost", "Post", new { postId = post.PostId, threadId = post.ThreadId }, null)
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <script src="~/Scripts/site.js"></script>
+    </body>
+}
+else
+{
+    @Html.Action("Login", "Account", null)
+}

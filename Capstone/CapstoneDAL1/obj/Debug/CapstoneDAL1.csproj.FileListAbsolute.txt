@@ -1,0 +1,6 @@
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\bin\Debug\CapstoneDAL1.dll
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\bin\Debug\CapstoneDAL1.pdb
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\obj\Debug\CapstoneDAL1.csproj.CoreCompileInputs.cache
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\obj\Debug\CapstoneDAL1.dll
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\obj\Debug\CapstoneDAL1.pdb
+C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\obj\Debug\CapstoneDAL1.csprojResolveAssemblyReference.cache

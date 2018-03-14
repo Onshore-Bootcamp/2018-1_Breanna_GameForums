@@ -1,0 +1,41 @@
+﻿@using Capstone.Models
+@model RolePO
+@{
+    ViewBag.Title = "EditRole";
+
+    int userRole = 0;
+    if (Session["RoleID"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+
+@if (Session["Username"] != null && userRole == 1)
+{
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="Forms container">
+            <h2>Edit Role</h2>
+            @using (Html.BeginForm("UpdateRole", "Role", FormMethod.Post))
+            {
+                <div class="form-horizontal FormContent">
+                    <div class="form-group">
+                        @Html.HiddenFor(model => Model.RoleId)
+                    </div>
+                    @Html.Label("Name")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Name)
+                    </div>
+                    <input type="submit" value="Submit" />
+                </div>
+            }
+        </div>
+    </body>
+}
+else
+{
+    @Html.Action("Index", "User", null)
+}
+

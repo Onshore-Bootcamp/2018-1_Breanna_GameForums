@@ -1,0 +1,36 @@
+﻿@using Capstone.Models
+@model PostPO
+@{
+    ViewBag.Title = "AddPost";
+}
+
+@if (Session["Username"] != null)
+{
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="Forms container">
+            <h2>AddPost</h2>
+            @using (Html.BeginForm("AddPost", "Post", FormMethod.Post))
+            {
+                <div class="form-horizontal FormContent">
+                    @Html.Label("Title")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Title)
+                    </div>
+                    @Html.Label("Content")
+                    <div class="form-group">
+                        @Html.HiddenFor(model => Model.ThreadId)
+                        @Html.TextAreaFor(model => Model.Content, new { rows = "10", cols = "75" })
+                    </div>
+                    <input type="submit" value="submit" />
+                </div>
+            }
+        </div>
+    </body>
+}
+else
+{
+    @Html.Action("Login", "Account", null)
+}

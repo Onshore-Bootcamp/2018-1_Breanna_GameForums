@@ -1,0 +1,245 @@
+
+[3/6/2018 11:05:14 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 163
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/6/2018 11:05:16 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 163
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/6/2018 11:05:17 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 163
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/6/2018 11:06:27 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 163
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/6/2018 11:17:16 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:18:57 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:19:04 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:19:06 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:19:07 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:20:51 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:20:52 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:22:25 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 116
+
+[3/6/2018 11:25:10 AM]
+Fatal - Void WinIOError(Int32, System.String) - Could not find a part of the path 'C:\Users\Breanna\source\repos\Capstone\CapstoneDAL\Logging\Logs.txt'. -    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at CapstoneDAL.Logging.Logger.Log(String level, String targetSite, String message, String stackTrace) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\Logging\Logger.cs:line 13
+   at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 167
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/6/2018 11:30:44 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Violation of UNIQUE KEY constraint 'IX_Users_Unique_Username'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (TestUser1).
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 168
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 113
+
+[3/6/2018 11:52:53 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles". The conflict occurred in database "CapstoneForum", table "dbo.Roles", column 'RoleID'.
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 168
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 113
+
+[3/6/2018 11:56:51 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles". The conflict occurred in database "CapstoneForum", table "dbo.Roles", column 'RoleID'.
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 172
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 113
+
+[3/7/2018 6:00:20 PM]
+Fatal - Int32 AverageWordsPerPost() - Object reference not set to an instance of an object. -    at Capstone.Controllers.ThreadController.AverageWordsPerPost() in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\ThreadController.cs:line 45
+
+[3/7/2018 6:10:39 PM]
+Fatal - Int32 AverageWordsPerPost() - Object reference not set to an instance of an object. -    at Capstone.Controllers.ThreadController.AverageWordsPerPost() in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\ThreadController.cs:line 45
+
+[3/9/2018 2:19:09 PM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Could not find stored procedure 'ROLE_VIEW_BY_ID'. -    at CapstoneDAL.CapstoneDAO.RoleDAO.ViewRoleById(Int32 Id) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\RoleDAO.cs:line 91
+   at Capstone.Controllers.RoleController.UpdateRole(Int32 Id) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\RoleController.cs:line 92
+
+[3/10/2018 5:50:05 PM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Violation of UNIQUE KEY constraint 'IX_Users_Unique_Username'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (TestUser1).
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 172
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 112
+
+[3/10/2018 8:26:59 PM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Could not find stored procedure 'THREAD_VIEW_BY_ID'. -    at Capstone.ThreadDAO.ViewThreadByID(Int32 Id) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\ThreadDAO.cs:line 89
+   at Capstone.Controllers.ThreadController.UpdateThread(Int32 threadId) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\ThreadController.cs:line 102
+
+[3/10/2018 8:46:19 PM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Could not find stored procedure 'ROLE_VIEW_BY_ID'. -    at CapstoneDAL.CapstoneDAO.RoleDAO.ViewRoleById(Int32 Id) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\RoleDAO.cs:line 91
+   at Capstone.Controllers.RoleController.UpdateRole(Int32 Id) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\RoleController.cs:line 91
+
+[3/11/2018 7:42:26 PM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - Procedure or function 'POST_ADD' expects parameter '@Title', which was not supplied. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 123
+
+[3/14/2018 10:13:48 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 123
+
+[3/14/2018 10:14:48 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 123
+
+[3/14/2018 10:15:24 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles". The conflict occurred in database "CapstoneForum", table "dbo.Roles", column 'RoleID'.
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 172
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 120
+
+[3/14/2018 10:15:26 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles". The conflict occurred in database "CapstoneForum", table "dbo.Roles", column 'RoleID'.
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 172
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 120
+
+[3/14/2018 10:15:27 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_Users_Roles". The conflict occurred in database "CapstoneForum", table "dbo.Roles", column 'RoleID'.
+The statement has been terminated. -    at CapstoneDAL.UserDAO.UpdateUserInformation(UserDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\UserDAO.cs:line 172
+   at Capstone.Controllers.UserController.UpdateUser(UserPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\UserController.cs:line 120
+
+[3/14/2018 10:50:56 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 123
+
+[3/14/2018 10:51:44 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 123
+
+[3/14/2018 10:55:56 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form)
+
+[3/14/2018 10:56:04 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form)
+
+[3/14/2018 10:56:17 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Threads". The conflict occurred in database "CapstoneForum", table "dbo.Threads", column 'ThreadID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form)
+
+[3/14/2018 10:59:20 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Users". The conflict occurred in database "CapstoneForum", table "dbo.Users", column 'UserID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 124
+
+[3/14/2018 11:01:52 AM]
+Fatal - Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action]) - The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Posts_Users". The conflict occurred in database "CapstoneForum", table "dbo.Users", column 'UserID'.
+The statement has been terminated. -    at CapstoneDAL.CapstoneDAO.PostDAO.AddPost(PostDO form) in C:\Users\Breanna\source\repos\Capstone\CapstoneDAL1\CapstoneDAO\PostDAO.cs:line 241
+   at Capstone.Controllers.PostController.AddPost(PostPO form) in C:\Users\Breanna\source\repos\Capstone\Capstone\Controllers\PostController.cs:line 124

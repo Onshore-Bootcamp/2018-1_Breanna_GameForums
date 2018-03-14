@@ -1,0 +1,39 @@
+﻿@using Capstone.Models
+@model List<RolePO>
+@{
+    ViewBag.Title = "Roles";
+
+    int userRole = 0;
+    if (userRole == 0)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+@if (Session["Username"] != null && userRole == 1)
+{
+    <head>
+        <link rel="stylesheet" href="~/Content/Site.css">
+    </head>
+    <body>
+        <div class="List container">
+            <h1>Roles</h1>
+            @Html.ActionLink("Add New Role", "AddRole", "Role", new { @style = "text-transform:capitalize, font-weight:bold" })
+
+            @foreach (RolePO role in Model)
+            {
+                <div id="RoleList">
+                    <span>@Html.DisplayFor(model => role.Name)</span>
+                    <div class="AdminListItemOptions">
+                        @Html.ActionLink("Edit", "UpdateRole", "Role", new { id = role.RoleId }, null)
+                        @Html.ActionLink("Delete", "DeleteRole", "Role", new { id = role.RoleId }, new { @onclick = "return Confirmation('Are you sure you want to delete?')" })
+                    </div>
+                </div>
+            }
+        </div>
+        <script src="~/Scripts/site.js"></script>
+    </body>
+}
+else
+{
+    @Html.Action("Login", "Account", null)
+}

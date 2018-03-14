@@ -1,0 +1,33 @@
+﻿@using Capstone.Models
+@model UserPO
+@{
+    ViewBag.Title = "DeleteUser";
+
+    int userRole = 0;
+    if (userRole == 0)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+
+@if (Session["Username"] != null && userRole == 1)
+{
+    <div>
+        <h2>Delete User</h2>
+
+        @using (Html.BeginForm("DeleteUser", "User", FormMethod.Post))
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.HiddenFor(model => Model.UserId)
+                </div>
+                <input type="submit" value="Submit" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    @Html.Action("Index", "User", null)
+}
+

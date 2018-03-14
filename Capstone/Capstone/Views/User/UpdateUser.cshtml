@@ -1,0 +1,61 @@
+﻿@using Capstone.Models
+@model UserPO
+@{
+    ViewBag.Title = "UpdateUser";
+
+    int userRole = 0;
+    if (Session["RoleID"] != null)
+    {
+        int.TryParse(Session["RoleID"].ToString(), out userRole);
+    }
+}
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<body>
+    @if (Session["Username"] != null && (userRole == 1 || userRole == 2))
+    {
+        <div class="Forms container">
+            <h2>UpdateUser</h2>
+            @using (Html.BeginForm("UpdateUser", "User", FormMethod.Post))
+            {
+                <div class="form-horizontal FormContentUser">
+                    <div class="form-group">
+                        @Html.HiddenFor(model => Model.UserId)
+                        @Html.HiddenFor(model => Model.UserId)
+                    </div>
+                    @if (userRole == 1)
+                    {
+                        @Html.Label("Role ID")
+                        <div class="form-group">
+                            @Html.TextBoxFor(model => Model.RoleId)
+                            @Html.ValidationMessageFor(model => Model.RoleId)
+                        </div>
+                    }
+                    @Html.Label("Username")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Username)
+                        @Html.ValidationMessageFor(model => Model.Username)
+                    </div>
+                    @Html.Label("First Name")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Name)
+                    </div>
+                    @Html.Label("Email Address")
+                    <div class="form-group">
+                        @Html.TextBoxFor(model => Model.Email)
+                    </div>
+                    <div class="form-group">
+                        @Html.HiddenFor(model => Model.Password)
+                    </div>
+                    <input class="ButtonCenter" type="submit" value="Submit" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        @Html.Action("Index", "User", null)
+    }
+
+</body>

@@ -1,0 +1,25 @@
+﻿@using Capstone.Models
+@model PostPO
+@{
+    ViewBag.Title = "DeletePost";
+}
+
+@if (Session["Username"] != null)
+{
+    <div>
+        <h2>Delete Post</h2>
+        @using (Html.BeginForm("DeletePost", "Post", FormMethod.Post))
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.HiddenFor(model => Model.PostId)
+                </div>
+                <input type="submit" value="Submit" />
+            </div>
+        }
+    </div>
+}
+else
+{
+    @Html.Action("Login", "Account", null)
+}
